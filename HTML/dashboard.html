@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elearning Dashboard</title>
+  <link rel="stylesheet" href="../CSS/dashboard.css">
+  <script src="../js/dashboard.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="user">
+        <span>Dashboard</span>
+        <a href="#"></a>
+      </div>
+    </header>
+    <main>
+      <div class="cards">
+        <div class="card">
+          <span>19</span>
+          <p>Books Downloaded</p>
+        </div>
+        <div class="card">
+          <span>9</span>
+          <p>Opened Books</p>
+        </div>
+      </div>
+      <div class="user-info">
+        <div class="profile">
+          <img src="../Assets/bitmoji.jpg" alt="Profile Picture" >
+          <p><span id="user_name"></span></p>
+          <a class="open-up" id="open-up">Edit Profile</a>
+          <a class="open-img" id="open-img">Edit Image</a>
+        </div>
+        <div class="plans">
+          <h3>Free Plan</h3>
+          <a href="#">Upgrade Now</a>
+        </div>
+      </div>
+      <div class="sections">
+        <div class="section">
+          <h3>To-do List</h3>
+          <ul>
+            <li>
+              <span class="done">✔</span>
+              Finish Project Branding
+            </li>
+            <li>
+              <span class="pending">▢</span>
+              Start Design for UHS Branding
+            </li>
+            <li>
+              <span class="pending">▢</span>
+              Review Style Guide for Webflow Dev
+            </li>
+          </ul>
+          <a href="#">Show More</a>
+        </div>
+        <div class="section">
+          <h3>Personal Notes</h3>
+          <p><span  id="personal_note"></span></p>
+          <a href="#">Add Note</a>
+        </div>
+      </div>
+      <div class="calendar">
+        <h3>Upcoming Event</h3>
+        <h4>Project Branding</h4>
+        <p>UHS Branding</p>
+        <span>3/5 Members Attending</span>
+        <p>Wed, 25 Nov 2023</p>
+        <a href="#">See Details</a>
+      </div>
+      <div class="friends">
+        <h3>My Friends</h3>
+        <ul>
+          <li>
+            <img src="../Assets/bitmoji1.jpg" alt="Friend 1">
+            <span id="Friend1">Okky J.</span>
+            <span class="online">Online</span>
+          </li>
+          <li>
+            <img src="../Assets/bitmoji3.jpg" alt="Friend 2">
+            <span id="Friend2">Osoke A.</span>
+            <span class="online">Online</span>
+          </li>
+          <li>
+            <img src="../Assets/bitmoji4.jpg" alt="Friend 3">
+            <span id="Friend3">Courtney H.</span>
+            <span class="fluny">fluny 42m ago</span>
+          </li>
+        </ul>
+        <a href="#">Show All</a>
+        <p>Get the Mobile App Now!</p>
+      </div>
+      <div class="pages">
+        <h3>My Pages</h3>
+        <ul>
+          <li>
+            <img src="../Assets/dashboard.avif" alt="Page 1">
+            <a href="dashboard.html" style="text-decoration: none;">
+              <p>Personal</p>
+            </a>
+          </li>
+          <li>
+            <img src="../Assets/bookseach.jpeg" alt="Page 2">
+            <a href="search.html" style="text-decoration: none;">
+              <p>Search Notes</p>
+            </a>
+          </li>
+          <li>
+            <img src="../Assets/settings.png" alt="Page 4">
+            <a href="setting.html" style="text-decoration: none;"></a>
+            <p>Settings</p></a>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <p>Copyright ©</p>
+      </footer>
+    </main>
+  </div>
+  <div class="bg-modal" id="bg-modal">
+    <div class="modal-content">
+      <img src="../Assets/bitmoji.jpg" alt="" srcset="" style="height: 200px;"><br>
+      <a type="submit" class="open-img" id="open-img">Edit</a>
+      <br><br>
+      <form action="../php/data_gather.php" method="post">
+        <input type="text" name="nickname" placeholder="Nickname" id="nickname"><br><br>
+        <input type="date" name="dob" id="dob" >
+        <br><br>
+        <select name="std" id="std">
+          <option value="none">none</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10+</option>
+        </select><br><br>
+        Gender
+        <input type="radio" name="gender" id="gender" value="male">Male 
+        <input type="radio" name="gender" id="gender" value="female">Female
+        <br><br>
+        <button type="reset" class="close">Cancel</button>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="hello" id="hello">
+    <div class="hello1">
+      <div>
+        <p>hello world</p>
+      </div>
+      
+      <img src="../Assets/" alt="">
+  </div>
+  </div>
+</body>
+
+</html>
